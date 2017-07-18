@@ -1,6 +1,6 @@
 function convertidorCelcius() {
-  var grados = document.getElementById("numero");
-  grados * (9 / 5) + 32;
+  var grados = parseInt(document.getElementById("numero").value);
+  var r = grados * (9 / 5) + 32;
+  var resultado = document.getElementById("respuesta");
+  resultado.innerHTML= r;
 }
-
-var resultado= convertidorCelcius();
